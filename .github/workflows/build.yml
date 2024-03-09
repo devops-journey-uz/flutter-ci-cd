@@ -2,9 +2,9 @@ name: Builds
 
 on:
     push:
-      branches: [ main ]
+      branches: [ master ]
     pull_request:
-      branches: [ main ]
+      branches: [ master ]
 
 permissions: read-all
 
@@ -23,14 +23,14 @@ jobs:
           java-version: 11
           distribution: temurin
 
-      - name: Clone Flutter repository with master channel
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.16.9'
           channel: 'stable'
       - run: flutter doctor -v
 
-      - name: Checkout gallery code
+      - name: Checkout Code
         uses: actions/checkout@v4
       - run: flutter pub get
 
