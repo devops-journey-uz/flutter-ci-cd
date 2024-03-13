@@ -1,4 +1,4 @@
-# grocery_store_app
+## Grocery Store App
 
-A new Flutter project.
+Original Source: [github.com/Nabinji/ui_design_flutter](https://github.com/Nabinji/ui_design_flutter/tree/main/lib/grocery_store_app)
 
